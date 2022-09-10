@@ -18,8 +18,4 @@ or
  <pre><i>$./pull_focal</i></pre></li>
  <li>To run the focal version (from the image pull from the hub):
  <pre><i>$./run_focal</i></pre></li>
- <li>To commit the docker container (for pushing onto the Docker hub)
- <pre><i>$./commitdocker</i></pre></li>
- <li>To push the docker image onto the Docker hub
- <pre><i>$./pushdocker</i></pre></li>
 </ul> 
