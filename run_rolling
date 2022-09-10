@@ -1,0 +1,7 @@
+docker run --name ubuntu-desktop -p 55000:22 -p 5901:5901 -p 5902:5902 -d bennyplo1218/ubuntu-desktop-mac-m1:rolling
+echo to see if the port is set for ssh 
+echo %docker port ubunbu-desktop
+echo to ssh into the server 
+echo %ssh ubuntu@localhost -p 55000
+echo password ubuntu
+docker exec -it --privileged ubuntu-desktop bash

@@ -1,0 +1,5 @@
+#docker image push bennyplo1218/ubuntu-desktop-mac-m1:latest
+#docker image push bennyplo1218/ubuntu-desktop-mac-m1:rolling
+docker image push bennyplo1218/ubuntu-desktop-mac-m1:focal
+
+
