@@ -8,10 +8,8 @@
  <pre><i>$./builddocker</i></pre></li>
  <li>To run teh docker image</li>
  <pre><i>$./rundocker</li>
- <li>To pull the rolling (latest) version (ubuntu v22.04) from the docker hub:
- <pre><i>$./pull_rolling</i></pre>
- or
- <pre><i>$./pull_latest</i></pre></li>
+ <li>To pull the rolling (latest) version (ubuntu v22.04) from the docker hub:<pre><i>$./pull_rolling</i></pre>
+ or <pre><i>$./pull_latest</i></pre></li>
  <li>To run the rolling (latest) version (from the image pull from the hub):
 <pre><i>$./run_rolling</i></pre></li>
 or
