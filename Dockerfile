@@ -4,7 +4,7 @@
 FROM ubuntu:rolling
 ##########################
 #Ubuntu v20.04 -> focal
-FROM ubuntu:focal
+#FROM ubuntu:focal
 #########################
 LABEL maintainer "bennyplo@gmail.com"
 ENV DEBIAN_FRONTEND noninteractive
@@ -13,7 +13,7 @@ RUN apt update
 RUN apt install  openssh-server sudo -y
 RUN apt install nano
 ARG USER=ubuntu
-RUN useradd -rm -d /home/ubuntu -s /bin/bash -g root -G sudo -u 1000 $USER 
+RUN useradd -rm -d /home/ubuntu -s /bin/bash -g root -G sudo -u 1000 $USER
 RUN usermod -aG sudo $USER
 RUN echo "Port 22" >> /etc/ssh/sshd_config
 RUN echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
@@ -38,7 +38,7 @@ RUN apt install tightvncserver -y
 RUN apt install lxde -y
 
 #RUN su ubuntu
-#RUN echo "ubuntu\nubuntu" | vncserver 
+#RUN echo "ubuntu\nubuntu" | vncserver
 #RUN vncserver -kill :1
 
 #---------------------------------------
@@ -87,7 +87,7 @@ RUN echo "start)" >> /etc/init.d/vncserver
 RUN echo 'log_action_begin_msg "Starting vncserver for user '${USER}' on \
 '>> /etc/init.d/vncserver
 RUN echo 'localhost:${DISPLAY}"' >> /etc/init.d/vncserver
-RUN echo 'su ${USER} -c "/usr/bin/vncserver ${OPTIONS}"' >>\ 
+RUN echo 'su ${USER} -c "/usr/bin/vncserver ${OPTIONS}"' >>\
 /etc/init.d/vncserver
 RUN echo ";;" >> /etc/init.d/vncserver
 RUN echo "stop)" >> /etc/init.d/vncserver
