@@ -19,3 +19,8 @@ or
  <li>To run the focal version (from the image pull from the hub):
  <pre><i>$./run_focal</i></pre></li>
 </ul> 
+<b>The focal version seems to be better with a proper desktop</b>
+<h3>VNC server</h3>
+<li>when started, run the following to start the vncserver (in the command prompt of the Ubuntu)<br/>
+<pre>#service vncserver start</pre></li>
+<li>You can then use any VNC viewer (ex. in Mac, Go->Connect to Server...then  vnc://127.0.0.1:5901) the password is ubuntu </li>
