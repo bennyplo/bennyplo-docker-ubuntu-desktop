@@ -8,7 +8,7 @@ To build the docker image:
 <pre><i>$./builddocker</i></pre></li>
 <li>To run the docker image</li>
  <pre><i>$./rundocker</i></pre></li>
-<li>To pull the rolling (latest) version (ubuntu v22.04) from the docker hub:<pre><i>$./pull_rolling</i></pre>
+<!--<li>To pull the rolling (latest) version (ubuntu v22.04) from the docker hub:<pre><i>$./pull_rolling</i></pre>
 or <pre><i>$./pull_latest</i></pre></li>
 <li>To run the rolling (latest) version (from the image pull from the hub):
 <pre><i>$./run_rolling</i></pre></li>
@@ -19,7 +19,7 @@ or
  <li>To run the focal version (from the image pull from the hub):
  <pre><i>$./run_focal</i></pre></li>
 </ul> 
-<b>The focal version seems to be better with a proper desktop</b>
+<b>The focal version seems to be better with a proper desktop</b>-->
 <h3>VNC server</h3>
 <li>when started, run the following to start the vncserver (in the command prompt of the Ubuntu)<br/>
 <pre>#service vncserver start</pre></li>
